@@ -1,0 +1,14 @@
+{
+    "articles": [
+        {
+            "title": "Tesla Delivers Record Number of Vehicles in Q3 2023",
+            "description": "Tesla delivered a record number of vehicles in the third quarter of 2023, despite ongoing supply chain challenges.",
+            "url": "https://www.tesla.com/pressroom/releases/tesla-delivers-record-number-vehicles-q3-2023"
+        },
+        {
+            "title": "Tesla Giga Texas Ramps Up Production",
+            "description": "Tesla's Giga Texas factory is ramping up production of Model Y vehicles, with plans to begin production of the Cybertruck in late 2023.",
+            "url": "https://www.tesla.com/giga-texas"
+        }
+    ]
+}

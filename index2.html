@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandNews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMo7Va_uJYb2Lld1HB_2neMTY1xqNHw9bAHg&usqp=CAU"
+                    alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="World" onclick="onNavItemClick('World')">World</li>
+                    <li class="hover-link nav-item" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+                    <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Suchbegriff eingeben..."
+                    aria-label="Search news articles">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="cards-container container flex" id="cards-container">
+
+        </section>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                    saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+
+
+    <script src="script.js"></script>
+
+    <section class="newsletter_container">
+        <div class="container">
+          <h2 class="newsletter_title">Newsletter abonnieren</h2>
+          <form action="#">
+            <div class="form-group">
+              <label for="email">E-Mail-Adresse:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="E-Mail-Adresse"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="interessen">Interessengebiete:</label>
+              <select class="form-control" id="interessen">
+                <option value="all">Alle</option>
+                <option value="news">News</option>
+                <option value="angebote">Angebote</option>
+                <option value="events">Events</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary newsletter_btn">
+              Newsletter abonnieren
+            </button>
+          </form>
+        </div>
+      </section>
+      
+
+      
+          
+        </div>
+      </footer>
+</body>    
+</html>  
+      
